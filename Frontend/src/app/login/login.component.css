@@ -1,0 +1,26 @@
+/* Centrer horizontalement */
+.center-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centrer verticalement */
+.center-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Appliquer le centrage aux éléments du formulaire */
+.form-container {
+  /* Vous pouvez ajuster la largeur et la hauteur en fonction de vos besoins */
+  width: 100%;
+  height: 100vh;
+  /* Centrer horizontalement et verticalement */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

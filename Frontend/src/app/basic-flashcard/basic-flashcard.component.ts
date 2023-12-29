@@ -1,12 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+// Définition du modèle Flashcard
+interface Flashcard {
+  question: string;
+  answer: string;
+}
 
 @Component({
   selector: 'app-basic-flashcard',
-  standalone: true,
-  imports: [],
   templateUrl: './basic-flashcard.component.html',
-  styleUrl: './basic-flashcard.component.css'
+  standalone: true,
+  styleUrls: ['./basic-flashcard.component.css']
 })
 export class BasicFlashcardComponent {
+  @Input() flashcard!: Flashcard; // Flashcard passée en tant que propriété
+  isFlipped: boolean = false; // État pour savoir si la carte est retournée
 
+  // Fonction pour basculer l'état de la carte
+  flipCard(): void {
+    this.isFlipped = !this.isFlipped;
+  }
 }

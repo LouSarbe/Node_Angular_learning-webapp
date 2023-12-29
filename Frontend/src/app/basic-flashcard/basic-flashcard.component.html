@@ -1,1 +1,8 @@
-<p>basic-flashcard works!</p>
+<div class="flashcard" (click)="flipCard()">
+  <div *ngIf="!isFlipped">
+    {{ flashcard.question }}
+  </div>
+  <div *ngIf="isFlipped">
+    {{ flashcard.answer }}
+  </div>
+</div>

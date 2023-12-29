@@ -4,6 +4,7 @@
   --primary: #4183bf;
   --secondary: #91b9dd;
   --accent: #649ed3;
+  --nav-height :45px;
 }
 
 body {
@@ -71,21 +72,47 @@ input, select, textarea {
   text-align: center;
   padding: 10px 0;
 }
-
 .navbar {
   background-color: var(--secondary);
   overflow: hidden;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar a {
-  float: left;
-  display: block;
-  color: white;
+  float: none;
+  display: flex;
+  align-items: center;
+  color: var(--text);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0 15px;
   text-decoration: none;
+  height: 100%;
+  transition: background-color 0.3s;
 }
 
 .navbar a:hover {
   background-color: var(--accent);
 }
+
+.navbar-brand {
+  padding-left: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+
+.fa-solid {
+  margin-right: 8px;
+}}
