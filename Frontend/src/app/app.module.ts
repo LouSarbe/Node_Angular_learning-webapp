@@ -1,23 +1,29 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module'; // Assurez-vous que le chemin est correct.
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import {ReactiveFormsModule} from "@angular/forms"; // Importez le LoginComponent
+import { HttpClientModule } from '@angular/common/http';
+import { FlashcardListComponent } from './flashcard-list/flashcard-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    // Déclarez le LoginComponent ici
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     AppComponent,
     LoginComponent,
     NavBarComponent,
-    ReactiveFormsModule
+    FlashcardListComponent,
+    AppComponent,
+
+    // Ajoutez d'autres modules ici
   ],
-  providers: []
+  providers: [],
 })
 export class AppModule { }

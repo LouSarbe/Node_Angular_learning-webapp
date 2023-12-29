@@ -1,6 +1,7 @@
 import {FormGroup, FormBuilder, Validators, NgForm, ReactiveFormsModule} from '@angular/forms';
 import {Component, OnInit} from "@angular/core";
 import {CommonModule} from "@angular/common";
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -9,7 +10,8 @@ import {CommonModule} from "@angular/common";
   standalone: true,
   imports: [
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ],
   styleUrls: ['./login.component.css']
 })
