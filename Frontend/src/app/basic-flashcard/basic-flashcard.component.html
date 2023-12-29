@@ -1,9 +1,13 @@
-<div class="flashcard" [class.flip]="isFlipped">
-  <div class="front" *ngIf="!isFlipped">
-    {{ flashcard?.question }}
+<div class="flashcard-container">
+  <div class="flashcard" [class.flip]="isFlipped">
+    <div class="front" *ngIf="!isFlipped">
+      {{ flashcard?.question }}
+    </div>
+    <div class="back" *ngIf="isFlipped">
+      {{ flashcard?.answer }}
+    </div>
   </div>
-  <div class="back" *ngIf="isFlipped">
-    {{ flashcard?.answer }}
+  <div class="flashcard-actions">
+    <button (click)="flipCard()">Flip</button>
   </div>
-  <button (click)="flipCard()">Flip</button>
 </div>
