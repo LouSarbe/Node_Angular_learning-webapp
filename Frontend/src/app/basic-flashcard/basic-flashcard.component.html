@@ -1,8 +1,9 @@
-<div class="flashcard" (click)="flipCard()">
-  <div *ngIf="!isFlipped">
-    {{ flashcard.question }}
+<div class="flashcard" [class.flip]="isFlipped">
+  <div class="front" *ngIf="!isFlipped">
+    {{ flashcard?.question }}
   </div>
-  <div *ngIf="isFlipped">
-    {{ flashcard.answer }}
+  <div class="back" *ngIf="isFlipped">
+    {{ flashcard?.answer }}
   </div>
+  <button (click)="flipCard()">Flip</button>
 </div>

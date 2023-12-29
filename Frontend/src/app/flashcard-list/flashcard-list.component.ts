@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlashcardService } from '../flashcard.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import {BasicFlashcardComponent} from "../basic-flashcard/basic-flashcard.component";
 
 interface Flashcard {

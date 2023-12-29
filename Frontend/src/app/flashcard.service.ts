@@ -17,7 +17,7 @@ interface Deck {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'any'
 })
 export class FlashcardService {
   private baseUrl = 'http://localhost:3000';
