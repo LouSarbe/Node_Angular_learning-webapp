@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { FlashcardListComponent } from './flashcard-list/flashcard-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -21,7 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NavBarComponent,
     FlashcardListComponent,
     AppComponent,
-
+    FormsModule,
     // Ajoutez d'autres modules ici
   ],
   providers: [

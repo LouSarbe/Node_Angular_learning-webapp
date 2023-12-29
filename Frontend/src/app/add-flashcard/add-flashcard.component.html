@@ -1,0 +1,14 @@
+<!-- add-flashcard.component.html -->
+<div class="add-flashcard-form">
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="question">Question:</label>
+      <input type="text" id="question" [(ngModel)]="flashcard.question" name="question" required>
+    </div>
+    <div>
+      <label for="answer">Réponse:</label>
+      <input type="text" id="answer" [(ngModel)]="flashcard.answer" name="answer" required>
+    </div>
+    <button type="submit">Ajouter Flashcard</button>
+  </form>
+</div>
