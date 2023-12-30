@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import {FlashcardListComponent} from "./flashcard-list/flashcard-list.component";
 import {AddFlashcardComponent} from "./add-flashcard/add-flashcard.component";
+import { HomeComponent } from './home/home.component';
+import {FooterComponent} from "./footer/footer.component";
 
 
 @Component({
@@ -18,7 +20,9 @@ import {AddFlashcardComponent} from "./add-flashcard/add-flashcard.component";
     FlashcardListComponent,
     HttpClientModule,
     AddFlashcardComponent,
-    FormsModule
+    FormsModule,
+    HomeComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
