@@ -6,7 +6,7 @@ This project is built using Angular v17.0.6 for the frontend and Node.js v20.6.1
 
 ### Prerequisites
 
-- **Node.js**: Make sure Node.js is installed on your machine. You can download it [here](https://nodejs.org/).
+- **Node.js**: Make sure Node.js is installed on your machine. You can download it [here](https://angular.io/).
 - **Angular CLI**: Install Angular CLI globally using npm:
 
     ```bash
