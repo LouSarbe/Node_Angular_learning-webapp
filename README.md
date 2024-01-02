@@ -5,9 +5,13 @@
 Welcome to the CulturalChallenge website! This platform is designed to offer users a structured and efficient way to acquire cultural knowledge through Anki card-style learning.
 
 We are 4 students collaborating on this project :
+
 Jules Deleuse (KryMucus)
+
 Paul (PetitPaul13)
+
 Lazare Bordereaux (lazbord)
+
 Louis Bessard (LouSarbe)
 
 ## Features
