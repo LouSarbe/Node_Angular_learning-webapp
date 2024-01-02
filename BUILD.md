@@ -1,7 +1,3 @@
-Certainly! Here's an example of a BUILD.md file explaining the technology stack used in your project:
-
----
-
 # Build Instructions
 
 This project is built using Angular v17.0.6 for the frontend and Node.js v20.6.1 for the backend.
