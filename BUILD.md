@@ -61,7 +61,7 @@ This project is built using Angular v17.0.6 for the frontend and Node.js v20.6.1
 4. **Start Backend Server**: Run the Node.js server:
 
     ```bash
-    node server.js
+    npm start
     ```
 
     The backend server will start at `http://localhost:3000`.
