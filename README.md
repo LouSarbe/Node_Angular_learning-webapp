@@ -8,7 +8,7 @@ We are 4 students collaborating on this project :
 
 Jules Deleuse (KryMucus)
 
-Paul (PetitPaul13)
+Paul Guiselin (PetitPaul13)
 
 Lazare Bordereaux (lazbord)
 
